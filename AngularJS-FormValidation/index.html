@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="formApp.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body ng-app="formApp" ng-controller="formCtrl">
+    <div class="jumbotron display-4">Sign up now!</div>
+    
+    <form name="signupForm" novalidate class = "form-group">    
+        <div class="row">
+            <label>Email: </label>
+            <input name="email" type="text" ng-model="email" ng-change="setEmailValidity()" class="form-control">
+            <div ng-show="signupForm.email.$invalid" class="error">Invalid smail id</div>
+        </div>
+
+        <div class="row">
+            <label>Number: </label>
+            <input name="phoneNumber" type="text" ng-model="phoneNumber" ng-change="setPhoneNumberValidity()" class="form-control">
+            <div ng-show="signupForm.phoneNumber.$invalid" class="error">Phone number must be 13 digits long</div>
+        </div>
+        
+        <div class="row">
+            <label>Name: </label>
+            <input name="name" type="text" ng-model="name" ng-change="setNameValidity()" class="form-control">
+            <div ng-show="signupForm.name.$invalid" class="error">Invalid name</div>
+        </div>
+        
+        <div class="row">
+            <label>Password: </label>
+            <input name="password" type="password" ng-model="password"  ng-change="setPasswordValidity()" class="form-control">
+        </div>
+        
+        <div class="row">
+            <label>Password: </label>
+            <input name="confirmPassword" type="password" ng-model="confirmPassword" ng-change="setPasswordValidity()" class="form-control">
+            <div ng-show="signupForm.confirmPassword.$invalid" class="error">Password does not match</div>
+        </div>
+
+        <button class="btn btn-primary" name="submit" ng-disabled="signupForm.$invalid || signupForm.email.$pristine || signupForm.phoneNumber.$pristine || signupForm.name.$pristine || signupForm.password.$pristine || signupForm.confirmPassword.$pristine">Submit!</button>
+    </form>
+
+</body>
+
+</html>

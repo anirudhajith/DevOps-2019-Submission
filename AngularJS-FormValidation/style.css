@@ -1,0 +1,29 @@
+.row > input {
+    border: 1px gray solid;
+    border-radius: 5px;
+}
+
+.row {
+    margin: 15px;
+}
+
+.error {
+    color:red;
+    font-size: 0.75em;
+    margin-top:5px;
+}
+
+input.ng-invalid {
+    border:red solid;
+}
+
+.btn[disabled] {
+    background-color:#6c757d;
+}
+
+.btn {
+    display:block;
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+}
