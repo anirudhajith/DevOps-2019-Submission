@@ -1,0 +1,30 @@
+.time {
+  margin-left: 20px;
+  text-align: center;
+  font-size: 4em;
+  position: relative;
+  z-index: 1;
+}
+
+.progress{
+  position: relative;
+  top: -95px;
+  height: 100px;
+}
+
+.toast {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  min-height: 150px;
+  font-size: 1.5em;
+  position: relative;
+  bottom: 50px;
+  max-width: 700px;
+  border: 2px solid #999c9e;
+}
+
+.toast-header {
+  background-color: #999c9e;
+  color: white;
+}
