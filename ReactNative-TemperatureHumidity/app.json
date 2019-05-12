@@ -3,7 +3,7 @@
     "name": "Temperature and Humidity",
     "slug": "ReactNative-TemperatureHumidity",
     "privacy": "public",
-    "sdkVersion": "27.0.0",
+    "sdkVersion": "32.0.0",
     "platforms": [
       "ios",
       "android"
@@ -15,9 +15,6 @@
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#87ceeb"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0
     },
     "assetBundlePatterns": [
       "**/*"
