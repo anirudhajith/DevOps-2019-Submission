@@ -63,22 +63,6 @@ const styles = StyleSheet.create({
     },
 
 
-    error: {
-        color: '#ffee03',
-        margin: 5,
-        fontSize: 30,
-    },
-
-    input: {
-        //marginTop: 0.04 * height,
-        borderRadius: 5,
-        padding: 10,
-        height: 70,
-        backgroundColor: 'white',
-        marginVertical: 0.04 * height,
-        fontSize: 30
-    },
-
     button: {
         height: 60,
         backgroundColor: '#8e74f7',
