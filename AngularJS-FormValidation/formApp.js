@@ -12,7 +12,7 @@ app.controller("formCtrl", function($scope) {
     }
 
     $scope.setPhoneNumberValidity = function() {
-        var regex = new RegExp('^\\+[0-9]{12}$');
+        var regex = new RegExp('^\\+91[0-9]{10}$');
         
         if(regex.test(this.phoneNumber)) {
             this.signupForm.phoneNumber.$setValidity("phoneNumberFormat", true);

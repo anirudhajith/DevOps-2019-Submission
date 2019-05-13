@@ -23,7 +23,7 @@
         <div class="row">
             <label>Number: </label>
             <input name="phoneNumber" type="text" ng-model="phoneNumber" ng-change="setPhoneNumberValidity()" class="form-control">
-            <div ng-show="signupForm.phoneNumber.$invalid" class="error">Phone number must be 13 digits long</div>
+            <div ng-show="signupForm.phoneNumber.$invalid" class="error">Phone number must be 13 digits long and must begin with +91</div>
         </div>
         
         <div class="row">
